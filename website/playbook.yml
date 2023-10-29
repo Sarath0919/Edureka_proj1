@@ -1,0 +1,7 @@
+---
+- hosts: TEST
+  become: yes
+  tasks:
+    - name: install docker
+      action: yum name=docker state=present
+
